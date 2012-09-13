@@ -4,6 +4,8 @@ class LocationsController < ApplicationController
   end
 
   def create
+    p "========================"
+    p params
     @location = Location.create(pramas[:location])
     redirect_to locations_path
   end
