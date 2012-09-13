@@ -1,0 +1,45 @@
+
+.mt5 { margin-top: 5px; }
+.mt10 { margin-top: 10px; }
+.mt20 { margin-top: 20px; }
+.mt30 { margin-top: 30px; }
+.mt50 { margin-top: 50px; }
+.mr5 { margin-right: 5px; }
+.mr10 { margin-right: 10px; }
+.mr20 { margin-right: 20px; }
+.mb5 { margin-bottom: 5px; }
+.mb10 { margin-bottom: 10px; }
+.mb20 { margin-bottom: 20px; }
+.mb30 { margin-bottom: 30px; }
+.ml5 { margin-left: 5px; }
+.ml10 { margin-left: 10px; }
+.ml20 { margin-left: 20px; }
+.margin5 { margin: 5px; }
+.margin10 { margin: 10px; }
+.margin20 { margin: 20px; }
+.padding5 { padding: 5px; }
+.padding10 { padding: 10px; }
+.padding20 { padding: 20px; }
+
+.left { float: left; }
+.right { float: right; }
+.nofloat { float: none!important; }
+.center { text-align: center!important; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.vtop { display:inline-block; vertical-align:top }
+.vmiddle { display:inline-block; vertical-align:middle }
+.vbottom { display:inline-block; vertical-align:bottom }
+.clear, .clearall { clear: both; }
+.no-padding { padding: 0px; }
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+.relative { position: relative; }
+
+// =============================================
+//	Text Styles
+// =============================================
+h1, h2, h3 { font-weight: normal; }
+
+.strong { font-weight: bold; }
+
