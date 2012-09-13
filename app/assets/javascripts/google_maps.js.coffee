@@ -10,8 +10,21 @@ $ ->
       center: latlng,
       mapTypeId: google.maps.MapTypeId.ROADMAP
       }
-      map = new google.maps.Map(@el, mapOptitions)
+      @map = new google.maps.Map(@el, mapOptitions)
 
+      for location in @collection
+        @renderMarker(location)
+
+    renderMarker: (location) ->
+      markerView = new MarkerView(model: location)
+      markerView.render(@map)
+
+  class MarkerView extends Backbone.View
+    render: (map) ->
+      new google.maps.Marker(
+        position: new google.maps.LatLng(@model.latitude, @model.longitude),
+        map: map
+      )
 
   if $('#google-map').length
-    location_map = new LocationMap(el: $("#google-map"))
+    location_map = new LocationMap(el: $("#google-map"), collection: JSON.parse(window.location_collection))
