@@ -1,7 +1,10 @@
 %script{ type: "text/javascript", src:"http://maps.googleapis.com/maps/api/js?libraries=places&sensor=true"}
   = javascript_include_tag 'google_maps'
 
-%h1.mt30.ml20 Your location on the map:
+.row.mt30.ml20
+  %h1.span6 Your location on the map:
+  %h2.span4
+    = link_to 'create a location', new_location_path()
 
 #google-map.mt30
   something
