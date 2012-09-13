@@ -1,4 +1,11 @@
 GoogleMapApp::Application.routes.draw do
+
+  resources :locations, only: [:new, :create, :index]
+
+  match  "locations" => "locations#index"
+
+  root :to => "locations#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
