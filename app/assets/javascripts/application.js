@@ -16,4 +16,5 @@
 //= require handlebars
 
 //= require locations
+//= require google_maps
 //= require_tree .
