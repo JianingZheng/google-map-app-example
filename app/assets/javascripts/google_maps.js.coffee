@@ -1,6 +1,3 @@
-#= require underscore
-#= require backbone
-
 $ ->
   class LocationMap extends Backbone.View
     initialize: () =>

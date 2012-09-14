@@ -1,5 +1,5 @@
 %script{ type: "text/javascript", src:"http://maps.googleapis.com/maps/api/js?libraries=places&sensor=true"}
-  = javascript_include_tag 'google_maps'
+= javascript_include_tag 'google_maps'
 
 .row.mt30.ml20
   %h1.span6 Your location on the map:
@@ -11,4 +11,3 @@
 
 :javascript
   window.location_collection = '#{@locations.to_json}';
-
